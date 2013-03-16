@@ -1,0 +1,4 @@
+#!/bin/bash
+while :; do
+   echo "this is test" |nc -l 1024
+done
