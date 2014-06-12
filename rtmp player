@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- controls\VideoPlayer\VideoPlayerFMS.mxml -->
+<s:Application xmlns:fx="http://ns.adobe.com/mxml/2009" 
+			   xmlns:s="library://ns.adobe.com/flex/spark" 
+			   xmlns:mx="library://ns.adobe.com/flex/mx" >
+	<s:layout>
+		<s:VerticalLayout/>
+	</s:layout>
+	
+	<s:VideoPlayer> 
+		<s:DynamicStreamingVideoSource host="rtmp://111.206.12.237:1935/SOHUPLAY/" streamType="live"> 
+			<s:DynamicStreamingVideoItem streamName="1006"/> 
+		</s:DynamicStreamingVideoSource> 
+	</s:VideoPlayer>
+	
+	<s:TextArea width="500" height="50"
+				text="Please wait while the video loads..."/>
+</s:Application>
